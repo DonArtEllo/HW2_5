@@ -41,6 +41,7 @@ class PhotosProfileCollectionViewCell: UICollectionViewCell {
     private func setupViews() {
         contentView.addSubview(imageContentImageView)
         contentView.roundCornersWithRadius(6)
+        contentView.layer.masksToBounds = true
     }
     
     override func layoutSubviews() {
